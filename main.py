@@ -7,6 +7,7 @@ import os
 logging.basicConfig(level=logging.INFO, format='%(levelname)s: %(message)s')
 logger = logging.getLogger()
 
+
 def read_pgn_file(file_name):
     input_file_path = os.path.join("games", f"{file_name}.pgn")
     output_file_path = os.path.join("games", f"{file_name}_cleaned.pgn")
@@ -25,6 +26,7 @@ def read_pgn_file(file_name):
         logging.info(f"Cleaned PGN content saved to '{output_file_path}'")
 
     logging.info(f"Successfully read '{input_file_path}'")
+
 
 if __name__ == "__main__":
     if len(sys.argv) != 2:
