@@ -3,7 +3,6 @@ import re
 import logging
 import os
 
-# Configure logging
 logging.basicConfig(level=logging.INFO, format='%(levelname)s: %(message)s')
 logger = logging.getLogger()
 
